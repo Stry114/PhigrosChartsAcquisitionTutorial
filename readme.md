@@ -1,5 +1,3 @@
-# Chart Analyzer 谱面提取/分析工具
-
 # phigros谱面/曲绘/音频提取完整教程（并导入模拟器）
 ## 需要准备的工具
  - phigros 安卓安装包 (apk文件)
@@ -70,21 +68,20 @@ https://github.com/Perfare/AssetStudio/releases
 以下是提取官谱并导入模拟器的教程。以白复生AT为例。
 
  - 打开`Texture2D`文件夹会发现提取出来的谱面全是乱的 (每个人导出得到的顺序都不一样)，找不到想要的谱面文件。
- - 上方的脚本（ChartAnalyzer.py）会分析所有谱面物量、bpm、时长等数据，并匹配到我们想要的文件。
- - 从上方github下载`ChartAnalyzer.py`并打开编辑。
-
+ - 上方的工具（ChartAnalyzer.exe）会分析所有谱面物量、bpm、时长等数据，并匹配到我们想要的文件。
+ - 从上方下载`ChartAnalyzer.exe`并运行
 ![](readme/10.png)
+![](readme/11.1.png)
 
- - 填入铺面所在的文件夹，即`Texture2D`文件夹的完整路径。尽量使用左斜杠`/`。
- - 填入相关的物量、bpm、时长数据。
- - 在关键词一栏填入难度`"AT"`。
- - 注意不要修改其他任何内容。
+ - 选取铺面文件所在的文件夹 (TextAsset)
 
-![](readme/11.png)
+![](readme/11.2.png)
 
- - 点击运行，等待分析完成.
+ - 在关键词填入“AT"。
+ - 填入物量、BPM、音频长度（秒）等数据。
+ - 点击开始筛选，等待分析完成。
 
-![](readme/12.png)
+![](readme/11.3.png)
 
  - 匹配度最高的就是筛选出来的谱面了。
 
