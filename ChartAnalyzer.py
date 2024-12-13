@@ -52,13 +52,13 @@ class Chart:
         self.objectNumber = aboveNumber + belowNumber
         # 最后一个键的时间
         self.keyMaxTime = keyMaxTime
-        self.keyMaxSecond = keyMaxTime / 90
+        self.keyMaxSecond = round(self.keyMaxTime / bpm * 1.875, 2)
         # 最后一个事件的事件
         self.eventMaxTime = eventMaxTime
-        self.eventMaxSecond = eventMaxTime / 90
+        self.eventMaxSecond = round(self.eventMaxTime / bpm * 1.875, 2)
         # 曲长
         self.maxTime = max(eventMaxTime, keyMaxTime)
-        self.audioLength = round(self.maxTime / bpm / 0.524)
+        self.audioLength = round(self.maxTime / bpm * 1.875, 2)
         # 排名分数
         self.sortingScore = 0
 
